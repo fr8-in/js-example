@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluid/Responsive</title>
+    <style>
+      h1 {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      .table-1 {
+        height: 760px;
+        margin-bottom: 150px;
+      }
+
+      .row {
+        background-color: #286466;
+        width: 80%;
+        margin: 0 10%;
+        margin-top: 1rem;
+      }
+
+      .table-2 {
+        width: 80%;
+        margin: auto;
+      }
+
+      .header {
+        background-color: #286466;
+        height: 190px;
+        width: 99.5%;
+      }
+
+      .aside_left {
+        width: 49%;
+        background-color: #286466;
+        height: 380px;
+        margin-top: 1rem;
+        float: left;
+        margin-bottom: 1rem;
+      }
+
+      .table-3 {
+        width: 80%;
+        margin: auto;
+      }
+      .section_left {
+        background-color: #286466;
+        height: 190px;
+        margin: 0 0.1rem;
+        margin-bottom: 0.13rem;
+        float: left;
+      }
+
+      .table-4 {
+        width: 80%;
+        margin: auto;
+      }
+
+      .section_right {
+        width:59%;
+        background-color: #286466;
+        height: 32.85%;
+        margin: 0;
+        float: left;
+      }
+
+      .row_right {
+        background-color: #286466;
+        margin-bottom: 0.2rem;
+        height: 760px;
+        float: right;
+        width: 49%;
+        margin-left: 5px;
+      }
+      .row_left {
+        background-color: #286466;
+        width: 49%;
+        float: right;
+        height: 378px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Table 1 -->
+
+    <section class="table-1">
+      <h1>Table 1</h1>
+      <section class="row" style="height: 25%"></section>
+      <section class="row" style="height: 50%"></section>
+      <section class="row" style="height: 25%"></section>
+    </section>
+    <!-- Table 2 -->
+    <h1>Table 2</h1>
+    <section class="table-2">
+      <section class="header"></section>
+      <aside class="aside_left" style="margin-right: 0.3rem"></aside>
+      <aside class="aside_left"></aside>
+      <footer class="header" style="clear: both"></footer>
+    </section>
+    <!-- Table 3 -->
+    <h1>Table 3</h1>
+    <section class="table-3">
+      <section class="section_left" style="width: 32.5%"></section>
+      <section class="section_left" style="width: 32.5%"></section>
+      <section class="section_left" style="width: 32.5%"></section>
+      <section class="header" style="clear: both; margin-bottom: 5px"></section>
+      <section class="section_left" style="width: 49.5%"></section>
+      <section class="section_left" style="width: 49%"></section>
+      <section class="header" style="clear: both"></section>
+    </section>
+    <!-- Table 4 -->
+    <h1>Table 4</h1>
+    <section class="table-4">
+      <aside class="row_right"></aside>
+      <aside class="row_left"></aside>
+      <aside class="row_left" style="margin-top: 4px"></aside>
+    </section>
+    <div style="clear: both"></div>
+    <!-- Table 5 -->
+    <h1>Table 5</h1>
+    <div class="table-4">
+      <section
+        class="rows section_left"
+        style="height: 100%; width: 38%; margin-right: 0.5rem"
+      ></section>
+      <section
+        class="row section_right"
+        style="margin-bottom: 0.2rem"
+      ></section>
+      <section
+        class="row section_right"
+        style="margin-bottom: 0.2rem"
+      ></section>
+      <section class="row section_right"></section>
+    </div>
+  </body>
+</html>
