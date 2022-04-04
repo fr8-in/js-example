@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluid with Flex layout</title>
+    <style>
+      h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .section_flex {
+        display: flex;
+        flex-direction: column;
+        height: 760px;
+        width: 80%;
+        margin: auto;
+        gap: 5px;
+      }
+      .header {
+        height: 190px;
+        width: 100%;
+        background-color: #2d878a;
+      }
+
+      .row1 {
+        height: 380px;
+        width: 100%;
+        background-color: #8fcdcf;
+      }
+
+      .footer {
+        height: 190px;
+        width: 100%;
+        background-color: #a8dadc;
+      }
+
+      .flex_col {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 760px;
+        margin: auto;
+        gap: 5px;
+      }
+      .flex_row {
+        display: flex;
+        width: 100%;
+        height: 380px;
+        gap: 5px;
+      }
+      .row2 {
+        height: 100%;
+        background-color: #346366;
+        width: 50%;
+      }
+      .row3 {
+        background-color: #8fcdcf;
+        width: 33.3%;
+      }
+      .row4 {
+        height: 49.5%;
+        background-color: #2d878a;
+        margin-bottom: 1%;
+      }
+      .col1 {
+        width: 50%;
+      }
+      .col2 {
+        width: 50%;
+        background-color: #a8dadc;
+        height: 100%;
+      }
+      .col3 {
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Table 1 -->
+    <h1>Table 1</h1>
+    <section class="section_flex">
+      <header class="header"></header>
+      <section class="row1"></section>
+      <footer class="footer"></footer>
+    </section>
+
+    <!-- Table 2 -->
+    <h1>Table 2</h1>
+    <section class="flex_col">
+      <header class="header"></header>
+      <section class="flex_row">
+        <section class="row2"></section>
+        <section class="row2"></section>
+      </section>
+      <footer class="footer"></footer>
+    </section>
+
+    <!-- Table 3 -->
+    <h1>Table 3</h1>
+    <section class="flex_col">
+      <section class="flex_row" style="height: 190px">
+        <section class="row3"></section>
+        <section class="row3"></section>
+        <section class="row3"></section>
+      </section>
+      <header class="header"></header>
+      <section class="flex_row" style="height: 190px">
+        <section class="row2"></section>
+        <section class="row2"></section>
+      </section>
+      <footer class="footer"></footer>
+    </section>
+
+    <!-- Table 4 -->
+    <h1>Table 4</h1>
+    <section class="flex_row" style="height: 760px; width: 80%; margin: auto">
+      <section class="col1">
+        <aside class="row4"></aside>
+        <aside class="row4"></aside>
+      </section>
+      <aside class="col2"></aside>
+    </section>
+
+    <!-- Table 5 -->
+    <h1>Table 5</h1>
+    <section class="flex_row" style="height: 760px; width: 80%; margin: auto">
+      <aside class="col2" style="width: 30%"></aside>
+      <section class="col3">
+        <header
+          class="header"
+          style="height: 32.7%; margin-bottom: 5px"
+        ></header>
+        <section
+          class="footer"
+          style="height: 32.7%; margin-bottom: 5px"
+        ></section>
+        <section class="flex_row" style="height: 33%">
+          <section class="row2"></section>
+          <section class="row2"></section>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
