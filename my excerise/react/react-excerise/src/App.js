@@ -1,12 +1,23 @@
-import './App.css';
 import Counter from './Counter';
+import Login from "./Login";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Register from './Register';
 
 function App() {
-
   return (
-    <div className="App">
-      <Counter />
-    </div>
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Counter />}/>
+      <Route path='/login' element={<Login />}/>
+      <Route path='/register' element={<Register />} />
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
