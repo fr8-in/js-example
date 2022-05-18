@@ -11,7 +11,7 @@ function Register() {
 
   const Query = gql
   `query city {
-      city {
+      city(where: {is_connected_city: {_eq: true}}) {
         id
         name
         is_connected_city
